@@ -39,13 +39,13 @@ div.row > div.col-100 {
   width: 100%;
 }
 
-div.row > div.col-50 {
-  width: 50%;
+div.row > div.col-60 {
+  width: 60%;
   padding: 0 15px;
 }
 
-div.row > div.col-25 {
-  width: 25%;
+div.row > div.col-20 {
+  width: 20%;
 }
 
 /* header content*/
@@ -85,17 +85,19 @@ nav ul > li > a:hover {
 
 /* main content */
 
+/*banner*/
+
 div#top-banner {
   height: 320px;
   background: url(../img/banner.jpg) no-repeat center ;
   background-size: cover;
-  border: 1px solid #DFD5D2;
   border-radius: 5px;
 }
 
 div#top-banner > div.overlay {
-  height: 320px;
-  background: rgba(0,0,0,0.3);
+  height: 318px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 5px;
 }
 
 div#top-banner > div.overlay > section {
@@ -113,19 +115,44 @@ div#top-banner > div.overlay > section > p {
   font-size: 0.8em;
 }
 
-main > div.row:nth-child(2) {
-  background: #0087FF;
+/*main content*/
+
+section.title > p {
+  color: #948f8f;
+  font-size: 0.75em;
 }
 
-main > div.row:nth-child(2) > div.col-100 > div.row > div.col-100 > div {
-  height: 60px;
-  background: #ABCFE7;
+div.inner-banner {
+  height: 150px;
+  background: #948f8f;
+  border-radius: 5px;
 }
 
-main > div.row:nth-child(2) > div.col-100 > div.row:nth-child(2) > div.col-25 > div,
-main > div.row:nth-child(2) > div.col-100 > div.row:nth-child(2) > div.col-50 > div  {
-  height: 400px;
-  background: #ABCFE7;
+div.inner-banner.left {
+  background: url(../img/img-1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+div.inner-banner.center {
+   background: url(../img/img-6.jpg) no-repeat center;
+   background-size: cover;
+ }
+
+div.inner-banner.right {
+  background: url(../img/img-3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+div.inner-banner > div.overlay {
+  height: 150px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+/*main row content*/
+
+div.row-content {
+  display: block;
 }
 
 div.no-margin {
