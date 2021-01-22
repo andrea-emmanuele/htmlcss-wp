@@ -152,7 +152,14 @@ div.inner-banner > div.overlay {
 /*main row content*/
 
 div.row-content {
+  margin-top: 15px;
+  color: #948f8f;
+  font-size: 0.75em;
+}
 
+div.row-content > p:first-child {
+  color: #000;
+  margin-bottom:6px;
 }
 
 div.no-margin {
@@ -165,7 +172,12 @@ div.p-b20 {
 
 /* footer content */
 
-footer > div.row > div.col-100 > div {
-  height: 45px;
-  background: #8801FE;
+footer p {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+footer p > span {
+  color: #FF0002;
+  font-size: 1.6em;
 }
