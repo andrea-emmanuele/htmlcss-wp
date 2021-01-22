@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header, main, footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+/* Grid system */
+
+div.row {
+  margin-top: 20px;
+}
+
+/* clear fix */
+
+div.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* end clearfix */
+
+div.row > div[class^="col-"] {
+  float: left;
+}
+
+div.row > div.col-100 {
+  width: 100%;
+}
+
+div.row > div.col-50 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+div.row > div.col-25 {
+  width: 25%;
+}
+
+/* header content*/
+
+header > div.row > div.col-100 > div {
+  height: 110px;
+  background: #E579E6;
+}
+
+/* main content */
+
+main > div.row:first-child > div.col-100 > div {
+  height: 350px;
+  background: #E1D67A;
+}
+
+main > div.row:nth-child(2) {
+  background: #0087FF;
+}
+
+main > div.row:nth-child(2) > div.col-100 > div.row > div.col-100 > div {
+  height: 60px;
+  background: #ABCFE7;
+}
+
+main > div.row:nth-child(2) > div.col-100 > div.row:nth-child(2) > div.col-25 > div,
+main > div.row:nth-child(2) > div.col-100 > div.row:nth-child(2) > div.col-50 > div  {
+  height: 400px;
+  background: #ABCFE7;
+}
+
+div.no-margin {
+  margin: 0;
+}
+
+div.p-b20 {
+  padding-bottom: 20px;
+}
+
+/* footer content */
+
+footer > div.row > div.col-100 > div {
+  height: 45px;
+  background: #8801FE;
+}
