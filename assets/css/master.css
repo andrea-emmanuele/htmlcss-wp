@@ -93,18 +93,23 @@ div#top-banner {
   border-radius: 5px;
 }
 
-div#top-banner > section {
-  width: 400px;
+div#top-banner > div.overlay {
+  height: 320px;
+  background: rgba(0,0,0,0.3);
+}
+
+div#top-banner > div.overlay > section {
+  width: 450px;
   color: #FFF;
-  margin-top: 200px;
-  margin-left: 30px;
+  padding-top: 200px;
+  padding-left: 50px;
 }
 
-div#top-banner > section > p:first-child {
-  font-size: 1.37em;
+div#top-banner > div.overlay > section > p:first-child {
+  font-size: 1.35em;
 }
 
-div#top-banner > section > p {
+div#top-banner > div.overlay > section > p {
   font-size: 0.8em;
 }
 
