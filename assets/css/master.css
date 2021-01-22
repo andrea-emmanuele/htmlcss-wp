@@ -85,9 +85,27 @@ nav ul > li > a:hover {
 
 /* main content */
 
-main > div.row:first-child > div.col-100 > div {
-  height: 350px;
-  background: #e1d67a;
+div#top-banner {
+  height: 320px;
+  background: url(../img/banner.jpg) no-repeat center ;
+  background-size: cover;
+  border: 1px solid #DFD5D2;
+  border-radius: 5px;
+}
+
+div#top-banner > section {
+  width: 400px;
+  color: #FFF;
+  margin-top: 200px;
+  margin-left: 30px;
+}
+
+div#top-banner > section > p:first-child {
+  font-size: 1.37em;
+}
+
+div#top-banner > section > p {
+  font-size: 0.8em;
 }
 
 main > div.row:nth-child(2) {
